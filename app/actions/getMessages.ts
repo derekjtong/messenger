@@ -1,6 +1,6 @@
 import prisma from "@/app/libs/prismadb"
 
-const getMessages = async(
+const getMessages = async (
   conversationId: string
 ) => {
   try {
@@ -13,7 +13,7 @@ const getMessages = async(
         seen: true,
       },
       orderBy: {
-        createdAt:'asc'
+        createdAt: 'asc'
       }
     })
     return messages;
@@ -22,4 +22,4 @@ const getMessages = async(
   }
 }
 
-export default getMessages
+export default getMessages;
