@@ -74,7 +74,7 @@ const MessageBox: React.FC<MessageBoxProps> = ({
               <div>{data.body}</div>
           )}
         </div>
-        {isLast && isOwn && seenList.length > 0 && (
+        {isLast && isOwn && (
           <div
             className="
               text-xs
@@ -82,7 +82,7 @@ const MessageBox: React.FC<MessageBoxProps> = ({
               text-gray-500
             "
           >
-            {`Seen by ${seenList}`}
+            {seenList.length > 0 ? `Seen by ${seenList}` : `Unseen`}
           </div>
         )}
       </div>
