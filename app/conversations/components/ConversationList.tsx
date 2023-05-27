@@ -1,7 +1,7 @@
 'use client';
 
 import useConversation from "@/app/hooks/useConversation";
-import { FullConversationType } from "@/app/types";
+import { FullConversationType, FullMessageType } from "@/app/types";
 import clsx from "clsx";
 import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
@@ -63,14 +63,21 @@ const ConversationList: React.FC<ConversationListProps> = ({
         return currentConversation;
       }));
     }
+    const removeHandler = (conversation: FullMessageType) => {
+      setItems((current) => {
+        return [...current.filter((convo) => convo.id !== conversation.id)];
+      })
+    }
 
     pusherClient.bind('conversation:new', newHandler);
     pusherClient.bind('conversation:update', updateHandler);
+    pusherClient.bind('conversation:remove', removeHandler);
 
     return () => {
       pusherClient.unsubscribe(pusherKey);
       pusherClient.unbind('conversation:new', newHandler);
       pusherClient.unbind('conversation:update', updateHandler);
+      pusherClient.unbind('conversation:remove', removeHandler);
     }
   }, [pusherKey])
 
