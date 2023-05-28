@@ -50,3 +50,9 @@ NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=
 NEXT_PUBLIC_PUSHER_APP_KEY=
 PUSHER_APP_ID=
 PUSHER_SECRET=
+```
+* MongoDB Atlas > Database Access
+* Github > Settings > Integrations Applications > Authorized OAuth Apps
+* Google Cloud > APIs & Services > Credentials
+* Cloudinary > Settings > Access Keys
+* Pusher > Channels > App Keys
