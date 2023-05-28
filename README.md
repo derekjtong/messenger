@@ -1,58 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Real-Time Messenger App
+This repository contains a fully-functional and visually appealing real-time Messenger clone built with the latest web development technologies.
 
-## Getting Started
+# Key Features
+* Real-time messaging using Pusher
+* Message notifications and alerts
+* Sleek UI design using Tailwind CSS, including animations and transition effects
+* Responsive design compatible with all devices
+* Authentication using NextAuth, Google, and Github
+* File and image upload capabilities with Cloudinary CDN
+* Client-side form validation using react-hook-form
+* Server error handling using react-toast
+* Features such as message read receipts and user online/offline status
+* One-on-one messaging and group chats
+* Message attachments and file sharing capabilities
+* User profile customization and settings
+* Route handlers (app/api) for handling POST, GET, and DELETE requests
+* Data fetching in server React components by directly accessing the database
+* Creating and managing chat rooms and channels
 
-First, run the development server:
+# Installation
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Prerequisits 
+* Node.js and npm/yarn installed on your machine
+* A MongoDB account for database
+* Google and Github developer accounts for OAuth
+* A Pusher account for real-time messaging
+* A Cloudinary account for file and image storage
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Setup
+* Clone this repository
+* Run `npm install` or `yarn install` to install the dependencies
+* Add your environment variables to the `.env.example` file in the root of the project and rename it to `.env`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-## Sample .env
-
-```
-DATABASE_URL=""
-NEXTAUTH_SECRET=""
-
-GITHUB_ID=
-GITHUB_SECRET=
-
-GOOGLE_CLIENT_ID=
-GOOGLE_CLIENT_SECRET=
-
-NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=
-
-NEXT_PUBLIC_PUSHER_APP_KEY=
-PUSHER_APP_ID=
-PUSHER_SECRET=
-```
-* MongoDB Atlas > Database Access
-* Github > Settings > Integrations Applications > Authorized OAuth Apps
-* Google Cloud > APIs & Services > Credentials
-* Cloudinary > Settings > Access Keys
-* Pusher > Channels > App Keys
+## Usage
+After setting up, you can start the development server with `npm run dev` or `yarn dev`. The application will run on `http://localhost:3000`.
