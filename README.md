@@ -1,4 +1,4 @@
-# Real-Time Messenger App
+# Messenger
 This repository contains a fully-functional and visually appealing real-time Messenger clone built with the latest web development technologies.
 
 # Key Features
