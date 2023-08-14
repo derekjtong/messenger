@@ -3,7 +3,7 @@ A fully-functional and visually appealing real-time Messenger clone built with t
 
 # Installation
 
-## Prerequisits 
+## Prerequisites 
 * Node.js and npm/yarn installed on your machine
 * A MongoDB account for database
 * Google and Github developer accounts for OAuth
