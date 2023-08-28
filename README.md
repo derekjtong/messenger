@@ -1,5 +1,5 @@
 # Messenger
-A fully-functional and visually appealing real-time Messenger clone built with the latest web development technologies.
+A fully-functional real-time Messenger clone.
 
 # Installation
 
